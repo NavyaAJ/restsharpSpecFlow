@@ -21,6 +21,6 @@ public class Tests
     var deserialize = new   RestSharp.Serialization.Json.JsonDeserializer();
     var outputData = deserialize.Deserialize<Dictionary<string,   string>>(response);
     var result = outputData["author"];
-    Assert.That(result, Is.EqualTo("type-code"), "Author is not   correct");
+    Assert.That(result, Is.EqualTo("type-code"), "Author is not correct");
     }
 }
